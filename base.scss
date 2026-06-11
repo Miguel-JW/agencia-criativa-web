@@ -1,0 +1,90 @@
+bash
+
+cat > /mnt/user-data/outputs/agencia-criativa-web/scss/_base.scss << 'EOF'
+// =============================================
+// _base.scss
+// Reset, tipografia e estilos base
+// =============================================
+
+@use 'variaveis' as v;
+
+// ─── CSS Reset ───────────────────────────────
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: v.$tamanho-base;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: v.$cor-escura;
+  color: v.$cor-texto;
+  font-family: v.$fonte-principal;
+  font-size: v.$tamanho-base;
+  font-weight: v.$peso-normal;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+// ─── Tipografia ──────────────────────────────
+h1, h2, h3, h4 {
+  font-family: v.$fonte-display;
+  font-weight: v.$peso-bold;
+  line-height: 1.15;
+  color: v.$cor-texto;
+}
+
+h1 { font-size: v.$tamanho-xl; }
+h2 { font-size: v.$tamanho-h2; margin-bottom: v.$espacamento-md; }
+h3 { font-size: v.$tamanho-lg; margin-bottom: v.$espacamento-sm; }
+
+p {
+  color: v.$cor-muted;
+  font-size: v.$tamanho-sm;
+  line-height: 1.8;
+  margin-bottom: v.$espacamento-sm;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: v.$transicao;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+em {
+  font-style: italic;
+  color: v.$cor-primaria;
+}
+
+strong {
+  font-weight: v.$peso-bold;
+  color: v.$cor-texto;
+}
+
+// ─── Seleção de texto ────────────────────────
+::selection {
+  background-color: v.$cor-primaria;
+  color: v.$cor-branca;
+}
+EOF
+echo "ok"
+Saída
