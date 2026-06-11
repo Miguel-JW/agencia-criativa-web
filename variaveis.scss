@@ -1,64 +1,51 @@
 // =============================================
-// _variaveis.scss — Tokens de design
+// _variaveis.scss
+// Todas as variáveis globais do projeto
 // =============================================
 
 // ─── Cores ───────────────────────────────────
-$cor-primaria:    #7c3aed;
-$cor-primaria-escura: #5b21b6;
-$cor-secundaria:  #06b6d4;
-$cor-destaque:    #f59e0b;
-$cor-bg:          #0f0f1a;
-$cor-surface:     #1a1a2e;
-$cor-borda:       #2d2d4a;
-$cor-texto:       #f1f0ff;
-$cor-texto-muted: #9896b8;
-$cor-branco:      #ffffff;
-$cor-sucesso:     #4ade80;
-$cor-erro:        #f87171;
+$cor-primaria:    #6c63ff;
+$cor-secundaria:  #ff6584;
+$cor-acento:      #43d9ad;
+$cor-escura:      #0f0f1a;
+$cor-superficie:  #1a1a2e;
+$cor-borda:       #2e2e4a;
+$cor-texto:       #e8e8f0;
+$cor-muted:       #8888aa;
+$cor-branca:      #ffffff;
 
 // ─── Tipografia ──────────────────────────────
 $fonte-principal: 'Segoe UI', Tahoma, sans-serif;
-$fonte-display:   'Georgia', 'Times New Roman', serif;
+$fonte-display:   Georgia, 'Times New Roman', serif;
 
-$tamanho-xs:   0.75rem;   // 12px
-$tamanho-sm:   0.875rem;  // 14px
-$tamanho-base: 1rem;      // 16px
-$tamanho-md:   1.125rem;  // 18px
-$tamanho-lg:   1.5rem;    // 24px
-$tamanho-xl:   2rem;      // 32px
-$tamanho-2xl:  2.5rem;    // 40px
-$tamanho-3xl:  3.5rem;    // 56px
+$tamanho-base:    16px;
+$tamanho-sm:      14px;
+$tamanho-lg:      20px;
+$tamanho-xl:      clamp(2rem, 5vw, 4rem);
+$tamanho-h2:      clamp(1.6rem, 3vw, 2.6rem);
 
-$peso-normal: 400;
-$peso-medio:  500;
-$peso-bold:   700;
+$peso-normal:     400;
+$peso-medio:      600;
+$peso-bold:       700;
 
 // ─── Espaçamentos ────────────────────────────
-$espacamento:    1rem;       // 16px — unidade base
-$espaco-xs:      calc($espacamento / 4);    // 4px
-$espaco-sm:      calc($espacamento / 2);    // 8px
-$espaco-md:      $espacamento;              // 16px
-$espaco-lg:      $espacamento * 2;          // 32px
-$espaco-xl:      $espacamento * 4;          // 64px
-$espaco-2xl:     $espacamento * 6;          // 96px
-
-// ─── Bordas ──────────────────────────────────
-$borda-radius-sm: 6px;
-$borda-radius-md: 12px;
-$borda-radius-lg: 20px;
-$borda-radius-full: 999px;
-
-// ─── Sombras ─────────────────────────────────
-$sombra-sm:  0 2px 8px rgba(0, 0, 0, 0.3);
-$sombra-md:  0 8px 24px rgba(0, 0, 0, 0.4);
-$sombra-lg:  0 24px 64px rgba(0, 0, 0, 0.6);
-
-// ─── Transições ──────────────────────────────
-$transicao-rapida: 0.15s ease;
-$transicao-normal: 0.25s ease;
-$transicao-lenta:  0.4s ease;
+$espacamento:     16px;
+$espacamento-xs:  calc($espacamento / 2);
+$espacamento-sm:  $espacamento;
+$espacamento-md:  $espacamento * 2;
+$espacamento-lg:  $espacamento * 4;
+$espacamento-xl:  $espacamento * 6;
 
 // ─── Layout ──────────────────────────────────
-$largura-max:     1200px;
-$largura-estreita: 760px;
-$altura-nav:      68px;
+$largura-maxima:  1200px;
+$raio-borda:      10px;
+$raio-borda-sm:   6px;
+$raio-borda-pill: 999px;
+
+// ─── Sombras ─────────────────────────────────
+$sombra-card:    0 8px 32px rgba(0, 0, 0, 0.4);
+$sombra-elevada: 0 24px 64px rgba(0, 0, 0, 0.6);
+
+// ─── Transições ──────────────────────────────
+$transicao:       all 0.25s ease;
+$transicao-lenta: all 0.4s ease;
