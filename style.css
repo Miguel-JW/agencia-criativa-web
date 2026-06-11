@@ -1,0 +1,13 @@
+cat > /mnt/user-data/outputs/agencia-criativa-web/scss/estilos.scss << 'EOF'
+// =============================================
+// estilos.scss
+// Arquivo principal — importa todos os partials
+// =============================================
+
+@use 'variaveis';
+@use 'mixins';
+@use 'base';
+@use 'layout';
+@use 'componentes';
+EOF
+echo "ok"
