@@ -1,0 +1,56 @@
+bash
+
+cat > /mnt/user-data/outputs/agencia-criativa-web/scss/_variaveis.scss << 'EOF'
+// =============================================
+// _variaveis.scss
+// Todas as variáveis globais do projeto
+// =============================================
+
+// ─── Cores ───────────────────────────────────
+$cor-primaria:    #6c63ff;
+$cor-secundaria:  #ff6584;
+$cor-acento:      #43d9ad;
+$cor-escura:      #0f0f1a;
+$cor-superficie:  #1a1a2e;
+$cor-borda:       #2e2e4a;
+$cor-texto:       #e8e8f0;
+$cor-muted:       #8888aa;
+$cor-branca:      #ffffff;
+
+// ─── Tipografia ──────────────────────────────
+$fonte-principal: 'Segoe UI', Tahoma, sans-serif;
+$fonte-display:   Georgia, 'Times New Roman', serif;
+
+$tamanho-base:    16px;
+$tamanho-sm:      14px;
+$tamanho-lg:      20px;
+$tamanho-xl:      clamp(2rem, 5vw, 4rem);
+$tamanho-h2:      clamp(1.6rem, 3vw, 2.6rem);
+
+$peso-normal:     400;
+$peso-medio:      600;
+$peso-bold:       700;
+
+// ─── Espaçamentos ────────────────────────────
+$espacamento:     16px;
+$espacamento-xs:  calc($espacamento / 2);
+$espacamento-sm:  $espacamento;
+$espacamento-md:  $espacamento * 2;
+$espacamento-lg:  $espacamento * 4;
+$espacamento-xl:  $espacamento * 6;
+
+// ─── Layout ──────────────────────────────────
+$largura-maxima:  1200px;
+$raio-borda:      10px;
+$raio-borda-sm:   6px;
+$raio-borda-pill: 999px;
+
+// ─── Sombras ─────────────────────────────────
+$sombra-card:    0 8px 32px rgba(0, 0, 0, 0.4);
+$sombra-elevada: 0 24px 64px rgba(0, 0, 0, 0.6);
+
+// ─── Transições ──────────────────────────────
+$transicao:       all 0.25s ease;
+$transicao-lenta: all 0.4s ease;
+EOF
+echo "ok"
