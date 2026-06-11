@@ -1,0 +1,17 @@
+bash
+
+cat > /mnt/user-data/outputs/agencia-criativa-web/package.json << 'EOF'
+{
+  "name": "agencia-criativa-web",
+  "version": "1.0.0",
+  "description": "Agência Criativa Web com SASS modular",
+  "scripts": {
+    "sass:build": "sass scss/estilos.scss css/estilos.css --style=compressed",
+    "sass:watch": "sass scss/estilos.scss css/estilos.css --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}
+EOF
+echo "ok"
