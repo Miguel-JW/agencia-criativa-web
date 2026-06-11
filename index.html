@@ -1,0 +1,233 @@
+bash
+
+cat > /mnt/user-data/outputs/agencia-criativa-web/index.html << 'EOF'
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agência Criativa Web</title>
+  <!-- CSS compilado pelo SASS -->
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">Agência Criativa</a>
+      <nav>
+        <ul class="nav__lista">
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="#projetos" class="nav__link">Projetos</a></li>
+          <li><a href="#sobre"    class="nav__link">Sobre</a></li>
+          <li><a href="#contato"  class="nav__link nav__link--ativo">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__conteudo">
+          <span class="hero__tag">Agência Digital</span>
+          <h1 class="hero__titulo">Criamos <em>experiências</em> que transformam</h1>
+          <p class="hero__subtitulo">Design, tecnologia e estratégia unidos para levar sua marca ao próximo nível.</p>
+          <div class="hero__acoes">
+            <a href="#projetos" class="btn btn--lg">Ver projetos</a>
+            <a href="#contato"  class="btn btn--secundario btn--lg">Fale conosco</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTATÍSTICAS -->
+    <section class="secao" id="stats">
+      <div class="container">
+        <div class="secao__grid--3">
+          <div class="stat">
+            <span class="stat__numero">120+</span>
+            <span class="stat__label">Projetos entregues</span>
+          </div>
+          <div class="stat">
+            <span class="stat__numero">98%</span>
+            <span class="stat__label">Clientes satisfeitos</span>
+          </div>
+          <div class="stat">
+            <span class="stat__numero">8 anos</span>
+            <span class="stat__label">De experiência</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="secao" id="servicos">
+      <div class="container">
+        <p class="secao__label">O que fazemos</p>
+        <h2>Nossos Serviços</h2>
+        <div class="secao__grid--3">
+
+          <div class="card card--destaque">
+            <div class="card__icone">🎨</div>
+            <h3 class="card__titulo">UI/UX Design</h3>
+            <p class="card__texto">Interfaces bonitas e intuitivas que os usuários adoram usar.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__icone">💻</div>
+            <h3 class="card__titulo">Desenvolvimento Web</h3>
+            <p class="card__texto">Sites e aplicações rápidas, acessíveis e escaláveis.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__icone">📱</div>
+            <h3 class="card__titulo">Apps Mobile</h3>
+            <p class="card__texto">Aplicativos iOS e Android com foco em desempenho e experiência.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__icone">🚀</div>
+            <h3 class="card__titulo">Marketing Digital</h3>
+            <p class="card__texto">Estratégias que aumentam sua visibilidade e convertem visitantes.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__icone">🔍</div>
+            <h3 class="card__titulo">SEO</h3>
+            <p class="card__texto">Otimização para motores de busca e crescimento orgânico.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__icone">📊</div>
+            <h3 class="card__titulo">Analytics</h3>
+            <p class="card__texto">Dados e métricas para decisões mais inteligentes.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="secao" id="projetos">
+      <div class="container">
+        <p class="secao__label">Portfólio</p>
+        <h2>Projetos Recentes</h2>
+        <div class="secao__grid--3">
+
+          <div class="card">
+            <div class="card__imagem" style="background: linear-gradient(135deg,#6c63ff22,#1a1a2e);"></div>
+            <span class="badge badge--primario">Web</span>
+            <h3 class="card__titulo" style="margin-top:12px;">Redesign E-commerce</h3>
+            <p class="card__texto">Aumento de 45% na conversão após o redesign completo da plataforma.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__imagem" style="background: linear-gradient(135deg,#43d9ad22,#1a1a2e);"></div>
+            <span class="badge badge--acento">App</span>
+            <h3 class="card__titulo" style="margin-top:12px;">App de Saúde</h3>
+            <p class="card__texto">Aplicativo com 50 mil downloads no primeiro mês de lançamento.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__imagem" style="background: linear-gradient(135deg,#ff658422,#1a1a2e);"></div>
+            <span class="badge badge--secundario">Branding</span>
+            <h3 class="card__titulo" style="margin-top:12px;">Identidade Visual</h3>
+            <p class="card__texto">Rebranding completo com novo manual de identidade e aplicações.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="secao" id="sobre">
+      <div class="container">
+        <div class="secao__grid--2">
+          <div>
+            <p class="secao__label">Sobre nós</p>
+            <h2>Quem somos</h2>
+            <div class="servico" style="margin-bottom:24px;">
+              <span class="servico__icone">💡</span>
+              <div>
+                <p class="servico__titulo">Inovação constante</p>
+                <p class="servico__texto">Acompanhamos as tendências para entregar soluções modernas.</p>
+              </div>
+            </div>
+            <div class="servico" style="margin-bottom:24px;">
+              <span class="servico__icone">🤝</span>
+              <div>
+                <p class="servico__titulo">Parceria real</p>
+                <p class="servico__texto">Trabalhamos lado a lado com o cliente em cada etapa.</p>
+              </div>
+            </div>
+            <div class="servico">
+              <span class="servico__icone">🏆</span>
+              <div>
+                <p class="servico__titulo">Resultados comprovados</p>
+                <p class="servico__texto">Nossos projetos geram impacto real e mensurável.</p>
+              </div>
+            </div>
+          </div>
+          <div style="background:linear-gradient(135deg,#6c63ff15,#1a1a2e);border:1px solid #2e2e4a;border-radius:10px;height:360px;display:flex;align-items:center;justify-content:center;font-size:5rem;">
+            🏢
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="secao" id="contato">
+      <div class="container">
+        <p class="secao__label">Fale conosco</p>
+        <h2>Entre em Contato</h2>
+        <form class="form" onsubmit="enviar(event)">
+          <div class="form__grupo">
+            <label class="form__label" for="nome">Nome</label>
+            <input class="form__input" type="text" id="nome" placeholder="Seu nome" required />
+          </div>
+          <div class="form__grupo">
+            <label class="form__label" for="email">E-mail</label>
+            <input class="form__input" type="email" id="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form__grupo form__grupo--completo">
+            <label class="form__label" for="mensagem">Mensagem</label>
+            <textarea class="form__textarea" id="mensagem" placeholder="Como podemos ajudar?" required></textarea>
+          </div>
+          <div class="form__grupo form__grupo--completo">
+            <button type="submit" class="btn">Enviar mensagem</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__logo">Agência Criativa</span>
+      <p class="footer__texto">© 2025 — Todos os direitos reservados.</p>
+      <nav class="footer__links">
+        <a href="#" class="footer__link">GitHub</a>
+        <a href="#" class="footer__link">LinkedIn</a>
+        <a href="#" class="footer__link">Instagram</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    function enviar(e) {
+      e.preventDefault();
+      alert('Mensagem enviada! Entraremos em contato em breve.');
+      e.target.reset();
+    }
+  </script>
+
+</body>
+</html>
+EOF
+echo "ok"
