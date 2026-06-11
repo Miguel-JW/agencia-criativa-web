@@ -1,0 +1,95 @@
+bash
+
+cat > /mnt/user-data/outputs/agencia-criativa-web/scss/_mixins.scss << 'EOF'
+// =============================================
+// _mixins.scss
+// Mixins reutilizáveis do projeto
+// =============================================
+
+@use 'variaveis' as v;
+
+// ─── Mixin 1: Flex centralizado ──────────────
+@mixin flex-centro($direcao: row, $gap: v.$espacamento-sm) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direcao;
+  gap: $gap;
+}
+
+// ─── Mixin 2: Botão base ─────────────────────
+@mixin botao-base($bg: v.$cor-primaria, $cor: v.$cor-branca) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: v.$espacamento-xs;
+  background-color: $bg;
+  color: $cor;
+  border: none;
+  border-radius: v.$raio-borda-sm;
+  font-family: v.$fonte-principal;
+  font-size: v.$tamanho-sm;
+  font-weight: v.$peso-bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  padding: v.$espacamento-sm v.$espacamento-md;
+  transition: v.$transicao;
+
+  &:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// ─── Mixin 3: Espaçamento de seção ───────────
+@mixin secao-espacamento {
+  padding: v.$espacamento-xl 0;
+  border-bottom: 1px solid v.$cor-borda;
+}
+
+// ─── Mixin 4: Card base ───────────────────────
+@mixin card-base {
+  background-color: v.$cor-superficie;
+  border: 1px solid v.$cor-borda;
+  border-radius: v.$raio-borda;
+  padding: v.$espacamento-md;
+  box-shadow: v.$sombra-card;
+  transition: v.$transicao;
+
+  &:hover {
+    border-color: v.$cor-primaria;
+    transform: translateY(-4px);
+    box-shadow: v.$sombra-elevada;
+  }
+}
+
+// ─── Mixin 5: Responsivo ─────────────────────
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+// ─── Mixin 6: Label de seção ─────────────────
+@mixin secao-label {
+  font-size: 11px;
+  font-weight: v.$peso-bold;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: v.$cor-primaria;
+  margin-bottom: calc(v.$espacamento / 2);
+}
+EOF
+echo "ok"
